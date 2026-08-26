@@ -1,5 +1,5 @@
 from homeassistant import config_entries
-from .const import DOMAIN
+from .const import DOMAIN, NAME
 
 
 class DomainConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
@@ -10,6 +10,6 @@ class DomainConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             return self.async_abort(reason="single_instance_allowed")
 
         return self.async_create_entry(
-            title=DOMAIN,
+            title=NAME,
             data={},
         )
