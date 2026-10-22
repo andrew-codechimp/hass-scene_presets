@@ -1,6 +1,7 @@
 {
     "domain": "scene_presets",
     "name": "Scene Presets",
+    "categories": [ "lighting" ],
     "after_dependencies": ["http"],
     "codeowners": [
         "@hypfer"
